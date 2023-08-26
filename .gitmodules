@@ -1,0 +1,3 @@
+[submodule "cbl-js"]
+	path = cbl-js
+	url = https://github.com/skotz/cbl-js
