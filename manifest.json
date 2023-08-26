@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "casan captcha",
+  "description": "Recunoaste captcha la Verificare asigurati",
+  "version": "1.0",
+  "action": {
+    "default_icon": {
+      "16": "favicon-16x16.ico"
+    }
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [ "model.dat" ],
+      "matches": [ "http://siui.casan.ro/*" ]
+    }
+  ],  
+  "content_scripts": [
+    {
+      "js": [
+        "cbl.js",
+        "content.js"
+      ],
+      "matches": [
+        "http://siui.casan.ro/*"
+      ]
+    }
+  ]
+
+
+
+}
